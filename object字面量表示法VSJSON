@@ -1,0 +1,20 @@
+Object literal notation vs JSON
+The object literal notation is not the same as the JavaScript Object Notation (JSON). Although they look similar, there are differences between them:
+
+object字面量表示法不同于json，虽然看起来一样，它们有以下几点不同之处：
+
+
+JSON permits only property definition using "property": value syntax.  The property name must be double-quoted, and the definition cannot be a shorthand.
+In JSON the values can only be strings, numbers, arrays, true, false, null, or another (JSON) object.
+A function value (see "Methods" above) can not be assigned to a value in JSON.
+Objects like Date will be a string after JSON.parse().
+JSON.parse() will reject computed property names and an error will be thrown.
+
+1. JSON必须使用双引号来定义属性
+2. JSON的值只能是string,number,array,boolean,null和其他JSON对象
+3. function不能被作为JSON的值
+4. Date对象将通过JSON.parse()转换成string
+5. JSON.parse()在解析需要计算的属性名时会抛出错误
+
+
+
